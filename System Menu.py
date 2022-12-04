@@ -54,6 +54,10 @@ if option == 4:
     print("Please wait...")
     print("Thanks for using!")
     exit()
+    
+if option != menu:
+	print("ERROR!")
+	exit()
           
 if option == 1:
     time.sleep(2)
@@ -69,3 +73,4 @@ for x in range(len(userInfo)):
         break
 else:
     print("Invalid")
+    done()
