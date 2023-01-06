@@ -1,0 +1,22 @@
+import time
+
+data = []
+	
+while True:
+			name = input("Enter name: ")
+			data.append(name)
+						
+			another = input("Do you want to Enter Another name? ( y / n ): ")
+			if another.casefold() == 'n':
+				print("Please Wait...\n")
+				time.sleep(2)
+				break
+				
+info = input("Do you want to see the list of student? ( y / n ): ")
+if info.casefold() == 'y':
+		
+		for element in data:
+			print(element)
+
+if info.casefold() == "n":
+	print("Thanks")
