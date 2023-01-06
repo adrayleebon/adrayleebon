@@ -1,0 +1,30 @@
+import turtle
+
+# Set up the turtle
+turtle.speed(10)
+turtle.hideturtle()
+turtle.penup()
+turtle.goto(0, -200)
+turtle.pendown()
+
+# Draw the petals
+for i in range(36):
+  turtle.left(10)
+  turtle.forward(100)
+  turtle.right(20)
+  turtle.forward(100)
+  turtle.right(140)
+  turtle.forward(100)
+  turtle.right(20)
+  turtle.forward(100)
+  turtle.right(180)
+
+# Draw the center of the flower
+turtle.color("orange")
+turtle.begin_fill()
+turtle.circle(20)
+turtle.end_fill()
+
+# Hide the turtle and keep the window open
+turtle.hideturtle()
+turtle.done()
